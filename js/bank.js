@@ -5,6 +5,7 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
 
     if (isNaN(parseFloat(newDepositAmount)) || parseFloat(newDepositAmount) < 0) {
         alert('Please Provide a Valid Number');
+        return;
     }
 
     //get the current deposit total amount
@@ -34,6 +35,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
 
     if (isNaN(parseFloat(newWithdrawAmount)) || parseFloat(newWithdrawAmount) < 0) {
         alert('Please Provide a Valid Number');
+        return;
     }
 
     const withDrawTotalElement = document.getElementById('withdraw-total');
